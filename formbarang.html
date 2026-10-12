@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Form Pemesanan Barang</title>
+    </head>
+    <body>
+        <nav>
+            <center>
+                <a href="link">Home</a> |
+                <a href="link">Generate Link</a> |
+                <a href="link">Transaction History</a> |
+                <a href="link">Policy</a> |
+                <a href="link">Logout</a> |
+            </center>
+        </nav>
+        <hr>
+
+        <table border="0" cellpadding="10" cellspacing="30">
+            <tr valign="top">
+
+                <td>
+                    <img src="assets/img.macam keychain.png" alt="Foto Produk" width="150" height="150"><br><br>
+                    <input type="button" value="Upload Picture">
+                </td>
+ 
+                <td>   
+                    <form action="link" method="post">
+                        <table border="0" cellpadding="3">
+                            <tr>
+                                <td>Title Here:</td>
+                                <td><input type="text" name="title" value="Ponyo Keychain"></td>
+                            </tr>
+                            <tr>
+                                <td valign="top">Deskription:</td>
+                                <td>
+                                    <textarea name="Deskription" rows="6" cols="24">Year :2026&#10;Model: Akrilik&#10;Condition: Mint</textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Account Number:</td>
+                                <td><input type="text" name="account_number" value="0110226106" size="35"></td>
+                            </tr>
+                            <tr>
+                                <td>Bank:</td>
+                                <td>
+                                    <select name="bank">
+                                        <option value="BSI" selected>BSI</option>
+                                        <option value="BCA">BCA</option>
+                                        <option value="BNI">BNI</option>
+                                        <option value="Mandiri">Mandiri</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Account Holder :</td>
+                                <td><input type="text" name="account_holder" value="Name Here" size="35"></td>
+                            </tr>
+                            <tr>
+                                <td valign="top">Transaction :</td>
+                                <td>
+                                    <select name="transaction">
+                                        <option value="1" selected>1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select><br>
+                                    <small>*if the transaction is of for 3 person, choose 3 form the drop-down list</small><br>
+                                    <input type="checkbox" name="send_mobile_check" checked> Send to Mobile Phone <br>
+                                    <input type="checkbox" name="send_email_check" checked> Send Email<br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Send to Mobile Phone :</td>
+                                <td><input type="text" name="send-mobile" value="0110226106" size="35"></td>
+                            </tr>
+                            <tr>
+                                <td>Send to Email :</td>
+                                <td><input type="text" name="send-email" value="apaajalah@gmail.com" size="35"></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <br>
+                                    <input type="submit" value="Generate Nabr Link">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
